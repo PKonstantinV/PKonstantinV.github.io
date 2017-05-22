@@ -2,169 +2,73 @@
 <html>
 <head>
 <meta charset="utf-8">
-<style type="text/css">
-#window1, #line {
-	position: relative;
-}
-    body {
-  background: #293f50;
-    }
-    header {
-    	padding: 20px 60px;
-    	font-family:"gabriola";
-
-    }
-    div-1 {
-    	
-        padding: 5px 10px;
-    	background:#F5F5F5;
-    	background: radial-gradient(#F5F5F5, #293f50);
-        width: 300px;
-        color: #000;
-    	font-family:"gabriola";
-    	font-size: small;
-    	border-radius: 25px;
-    	-ms-border-radius: 25px;
-    	-moz-border-radius: 25px;
-    	-o-border-radius: 25px;
-    	-webkit-border-radius: 25px;
-    	box-shadow: 0px 0px 0px #808080;
-    	margin-left: auto;
-    	margin-right: auto;
-    	margin-top: 100px;
-    }
-    div-1:hover {
-    color: #D3D3D3; 
-    background:#483D8B;
-    background: radial-gradient(#696969,#293f50);
-    
-    }
-   div-2 {
-    	
-        padding: 5px 10px;
-    	background:#F5F5F5;
-    	background: radial-gradient(#F5F5F5, #293f50);
-        width: 300px;
-        color: #000;
-    	font-family:"gabriola";
-    	font-size: small;
-    	border-radius: 25px;
-    	-ms-border-radius: 25px;
-    	-moz-border-radius: 25px;
-    	-o-border-radius: 25px;
-    	-webkit-border-radius: 25px;
-    	box-shadow: 0px 0px 0px #808080;
-    	margin-left: auto;
-    	margin-right: auto;
-    	margin-top: 100px;
-    }
-    div-2:hover {
-    color: #D3D3D3; 
-    background:#483D8B;
-    background: radial-gradient(#696969,#293f50);
-    }
-    div-3 {
-    	
-        padding: 5px 10px;
-    	background:#F5F5F5;
-    	background: radial-gradient(#F5F5F5, #293f50);
-        width: 300px;
-        color: #000;
-    	font-family:"gabriola";
-    	font-size: small;
-    	border-radius: 25px;
-    	-ms-border-radius: 25px;
-    	-moz-border-radius: 25px;
-    	-o-border-radius: 25px;
-    	-webkit-border-radius: 25px;
-    	box-shadow: 0px 0px 0px #808080;
-    	margin-left: auto;
-    	margin-right: auto;
-    	margin-top: 100px;
-    }
-    div-3:hover {
-    color: #D3D3D3;  
-    background:#483D8B;
-    background: radial-gradient(#696969,#293f50);
-}
-   #window1 {
-        width: 245px;
-        height: 800px;
-        background:#F5F5F5;
-    	background: radial-gradient(#F5F5F5, #293f50);
-        text-align: center;
-        padding: 15px;
-        border: ;
-        border-radius: 25px;
-        color: black;
-        display: none; 
-        
-
-      }
-      #window1:target {display: block;}
-      div-4 {
-
-      	font-family:"gabriola"
-      	color: #D3D3D3
-      }
-      a{
-      	text-decoration: none;
-      }
-      #line{
-      	width: 100%;
-        height: 150px;
-        padding: 15px;
-        background: #D3D3D3;
-        
-
-      }
-     .rightpic{
-     	float: right;
-     	margin: 0 0 5px 5px;
-     }
-     .rightpic1{
-     	float: right;
-     	margin: 0 0 90px 55px;
-     }
-      
-
-</style>
-
-	<title>Weather site</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Weather site</title>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<img src="1.png" class="rightpic">
-<img src="2.png" class="rightpic1">
+ 
+
     <header>
-        <font size="6" color="#D3D3D3">Weather in Ivano-Frankivsk
-        </font> <figure>
+            <form>
+                    <center>
+		                        <label for="cityname">Weather check:</label>
+		                        <input type="text" id="cityname" placeholder="Введіть назву населеного пункту" size="20"/>
+		                        <input type="button" id="send" value="Пошук" />
+	
+                    </center>
+            </form>
+	</header>
+	
+
+
+	
+	
+
+ 
+
     
-    </header>
 
 
-
-    <a href="#window1">
-        <div-1>
-             <font size="4"> Wather for one day
-             </font>
-        </div-1>
-    </a>
-    <div-2>
-        <font size="4">Wather for three days
-        </font>
+    <h2>Погода в місті <span id="selectedcity"></span></h2>
    
-    </div-2>
-    <div-3>
-        <font size="4">Wather for one week
-        </font>
-    </div-3>
-        <br>
-        <br>
+    <div id="container">
+            <font size="4"><a href="#window1" class="button">Погода на один день</a> 
+            </font>
+        
+  
+   
+            <font size="4"><a href="#" class="button">Погода на три дні</a> 
+            </font>
+   
+   
+            <font size="4"><a href="#" class="button">Прогноз погоди на тиждень</a>
+            </font> 
+    <div>
+    <br>
+        
+        
+
+	
+
+
     <div-4 id="window1">
-      Weather for today<br>
+      <font color="#fff">Погода сьогодні</font>
+      <br>
+      <ul>
+		<li>Хмарність: <b><span id="clouddescr"></span></b></li>
+		<img id="cloudimg">
+		<li>Температура: <b><span id="temp"></span>, &#8451;</b></li>
+		<li>Тиск: <b><span id="pressure"></span>, hPa</b></li>
+		<li>Вологість: <b><span id="humidity"></span>, %</b></li>
+		<li>Швидкість вітру: <b><span id="windspeed"></span>, meter/sec</b></li>
+	</ul>
+
       <a href="#close" class="close">Close</a>
     </div-4>
     <div id="line"></div>
+    <script type="text/javascript" src="js-script.js"></script>
 
 
 </body>
