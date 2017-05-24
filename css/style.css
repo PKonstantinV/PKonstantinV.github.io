@@ -1,3 +1,80 @@
+body { 
+    margin: 0; /* Убираем отступы */
+   }
+   div.form-group{
+    position: absolute; /* Относительное позиционирование */
+    
+    background: ;
+    z-index:2; /* Цвет фона */
+     /* Параметры рамки */
+
+   }
+.navbar{
+
+  border-radius:0;
+  margin-bottom:0;
+  border:none;
+        font-family: 'Open Sans Condensed', sans-serif, sans-serif;
+
+  }
+    
+.navbar > li >a{
+    
+    }
+  
+
+  
+.navbar-header{
+  }
+  
+
+.site-description{
+  color:#fff;
+  font-size:1.3em;
+  float:left;
+  margin-top:0px !important;
+  margin-left:0px;
+  }
+  
+.main-menu{
+  position: relative;
+  left:0px;
+  }
+  
+.slider, .carousel{
+  width: 100%;
+  max-height:360px;
+  overflow:hidden;
+  }
+  
+
+
+.carousel-control{
+  background-color:transparent;
+  background-image:none !important;
+  }
+  
+.carousel-control:hover,
+.carousel-control:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color:transparent !important;
+  background-image:none !important;
+  outline: 0;
+}
+
+.main-menu{
+  left:0;
+  position:relative;
+  }
+
+
+}
+
+
+
+
+
 
 #window1, #line {
 
@@ -8,13 +85,7 @@
   background-image: url('../img/Green-nature-grass-bokeh-blurred-background_1920x1200.jpg')
 
     }
-    header {
-
-    	padding: 20px 60px;
-      color:#fff;
-    	font-family:Helvetica, arial, serif;
-      font-size: 40px; 
-    }
+   
     a.button {
     font-family: Helvetica, arial, serif;
     color:#fff;
@@ -51,6 +122,13 @@
     -moz-opacity:0.7;
     -khtml-opacity: 0.7;
   }
+  div.list-group-item{
+    width: 450px;
+
+  }
+
+
+
     #cityname{
   height: 28px;
   width: 300px;
