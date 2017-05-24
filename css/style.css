@@ -1,12 +1,4 @@
-body { 
-    margin: 0; /* Убираем отступы */
-   }
-   div.form-group{
-    position: absolute; /* Относительное позиционирование */
-    
-    background: ;
-    z-index:2; /* Цвет фона */
-     /* Параметры рамки */
+
 
    }
 .navbar{
@@ -71,6 +63,9 @@ body {
 
 }
 
+div.form-group{
+
+}
 
 
 
@@ -87,40 +82,29 @@ body {
     }
    
     a.button {
+      background: #F5F5F5;
     font-family: Helvetica, arial, serif;
-    color:#fff;
+    color:#808080;
     text-align:center;
-    font-size:20px;
+    font-size:15px;
     cursor: pointer;
     text-decoration: none;
-    padding:10px;
+    padding:15px;
     border: 1px solid rgba(0,0,0,0.5);
     border-bottom: 3px solid rgba(0,0,0,0.5);
-    border-radius: 3px;
+    border-radius: 6px;
     -moz-border-radius: 3px;
     -webkit-border-radius: 3px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.5), 
-      inset 0 1px rgba(255,255,255,0.3), 
-      inset 0 10px rgba(255,255,255,0.2), 
-      inset 0 10px 20px rgba(255,255,255,0.25), 
-      inset 0 -15px 30px rgba(0,0,0,0.3); 
-    -webkit-box-shadow: 0 2px 8px rgba(0,0,0,0.5),
-      inset 0 1px rgba(255,255,255,0.3),
-      inset 0 10px rgba(255,255,255,0.2),
-      inset 0 10px 20px rgba(255,255,255,0.25),
-      inset 0 -15px 30px rgba(0,0,0,0.3);
-    -moz-box-shadow: 0 2px 8px rgba(0,0,0,0.5),
-      inset 0 1px rgba(255,255,255,0.3),
-      inset 0 10px rgba(255,255,255,0.2),
-      inset 0 10px 20px rgba(255,255,255,0.25),
-      inset 0 -15px 30px rgba(0,0,0,0.3);
+      
   }
 
   a.button:hover {
-    opacity: 0.7;
+    color:#000000;
+    opacity: 0.3;
     filter: alpha(opacity=70);
-    -moz-opacity:0.7;
-    -khtml-opacity: 0.7;
+    -moz-opacity:0.3;
+    -khtml-opacity: 0.3;
   }
   div.list-group-item{
     width: 450px;
@@ -150,8 +134,8 @@ body {
     }
 
    #window1 {
-        width: 550px;
-        height: 800px;
+        width: 565px;
+        height: 600px;
         font-family: Helvetica, arial, serif;
     color:#fff;
     text-align:center;
